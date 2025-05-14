@@ -3,7 +3,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 export const MyThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('dark'); // Default theme
+  const [theme, setTheme] = useState('light'); // Default theme
 
   // Load theme from AsyncStorage on app start
   useEffect(() => {
