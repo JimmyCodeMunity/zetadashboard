@@ -35,12 +35,20 @@ export const dashboardlinks = [
     actions: [
       {
         id: 1,
-        title: "Add Tenant",
+        title: "Fees Collection",
       },
       {
         id: 2,
-        title: "View Tenants",
-      }
+        title: "Income",
+      },
+      {
+        id: 3,
+        title: "Expenses",
+      },
+      {
+        id: 4,
+        title: "Reports",
+      },
     ]
   },
   {
@@ -50,45 +58,93 @@ export const dashboardlinks = [
     actions: [
       {
         id: 1,
-        title: "Add Apartment",
+        title: "Classes",
       },
       {
         id: 2,
-        title: "View Apartments",
-      }
+        title: "Subjects",
+      },
+      {
+        id: 3,
+        title: "Lesson Plan",
+      },
+      {
+        id: 4,
+        title: "HomeWork",
+      },
+      {
+        id: 5,
+        title: "Reports",
+      },
     ]
   }
 ]
 
 export const pageslinks = [
   {
-    id: 1,
+    id: 4,
     title: "Administration",
     icon: ShieldUser,
     actions: [
       {
         id: 1,
-        title: "Add user",
-      }
+        title: "Front Office",
+      },
+      {
+        id: 2,
+        title: "Manage Students",
+      },
+      {
+        id: 3,
+        title: "Download Center",
+      },
+      {
+        id: 4,
+        title: "Inventory",
+      },
+      {
+        id: 5,
+        title: "Front CMS",
+      },
+      {
+        id: 6,
+        title: "Certificates",
+      },
+      {
+        id: 7,
+        title: "Reports",
+      },
     ]
   },
   {
-    id: 2,
+    id: 5,
     title: "Students",
     icon: SquareUser,
     actions: [
       {
         id: 1,
-        title: "Add Tenant",
+        title: "Details",
       },
       {
         id: 2,
-        title: "View Tenants",
-      }
+        title: "Attendance",
+      },
+      {
+        id: 3,
+        title: "Hostel",
+      },
+      {
+        id: 4,
+        title: "Transport",
+      },
+      {
+        id: 5,
+        title: "Alumni",
+      },
     ]
   },
   {
-    id: 3,
+    id: 6,
     title: "Staff",
     icon: Users2,
     actions: [
@@ -103,22 +159,30 @@ export const pageslinks = [
     ]
   },
   {
-    id: 4,
+    id: 7,
     title: "Exam",
     icon: BookOpenCheck,
     actions: [
       {
         id: 1,
-        title: "View Transactions",
+        title: "Create Exam",
       },
       {
         id: 2,
-        title: "Record Payment",
+        title: "Manage Exam",
+      },
+      {
+        id: 3,
+        title: "Exam Results",
+      },
+      {
+        id: 4,
+        title: "Exam Setup",
       }
     ]
   },
   {
-    id: 5,
+    id: 8,
     title: "Communicate",
     icon: MessagesSquare,
     actions: [
@@ -133,7 +197,7 @@ export const pageslinks = [
     ]
   },
   {
-    id: 6,
+    id: 9,
     title: "Account",
     icon: User,
     actions: [
@@ -233,7 +297,7 @@ export default function Sidebar() {
                       : { height: 0, opacity: 0 }
                   }
                   transition={{ duration: 0.3, ease: 'easeInOut' }}
-                  className='ml-6 mt-1 border-l border-lime-300 pl-3 overflow-hidden space-y-2'
+                  className='ml-6 mt-1 border-l border-neutral-300 pl-3 overflow-hidden space-y-2'
                 >
                   {link.actions.map(action => (
                     <li key={action.id}>
@@ -242,8 +306,8 @@ export default function Sidebar() {
                         className={`flex flex-row space-x-3 w-full p-2 rounded-md transition ${
                           location.pathname === action.path
                             ? theme === 'dark'
-                              ? 'bg-lime-500 text-white'
-                              : 'bg-lime-600 text-white'
+                              ? 'bg-neutral-500 text-white'
+                              : 'bg-neutral-600 text-white'
                             : theme === 'dark'
                               ? 'hover:bg-neutral-700 text-white'
                               : 'hover:bg-gray-200 text-neutral-800'
@@ -304,7 +368,7 @@ export default function Sidebar() {
                       : { height: 0, opacity: 0 }
                   }
                   transition={{ duration: 0.3, ease: 'easeInOut' }}
-                  className='ml-6 mt-1 border-l border-lime-300 pl-3 overflow-hidden space-y-2'
+                  className='ml-6 mt-1 border-l border-neutral-300 pl-3 overflow-hidden space-y-2'
                 >
                   {link.actions.map(action => (
                     <li key={action.id}>
@@ -313,8 +377,8 @@ export default function Sidebar() {
                         className={`flex flex-row space-x-3 w-full p-2 rounded-md transition ${
                           location.pathname === action.path
                             ? theme === 'dark'
-                              ? 'bg-lime-500 text-white'
-                              : 'bg-lime-600 text-white'
+                              ? 'bg-neutral-500 text-white'
+                              : 'bg-neutral-600 text-white'
                             : theme === 'dark'
                               ? 'hover:bg-neutral-700 text-white'
                               : 'hover:bg-gray-200 text-neutral-800'
