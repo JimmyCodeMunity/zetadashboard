@@ -84,28 +84,32 @@ const Navbar = ({ pagetitle }) => {
           </div>
         </div>
 
-        <div className='md:hidden block'>
+        {
+            !open &&
+            <div className='md:hidden block'>
           <Icon.Menu onClick={handleMenu} className='text-neutral-500' />
         </div>
+        }
 
         {open && (
-          <div
-            id='menu'
-            className='md:hidden w-full h-screen top-0 left-0 fixed'
-          >
-            <div className='w-80 bg-white h-full'>
-              <div className='absolute top-4 rounded-full bg-lime-500 p-4 right-14'>
-                <Icon.ChevronLeft
-                  onClick={handleMenu}
-                  className='text-neutral-500'
-                />
-              </div>
-              <div className='md:hidden w-full'>
-                <MobileSidebar />
-              </div>
-            </div>
-          </div>
-        )}
+  <div
+    id="menu"
+    className="md:hidden w-full h-full z-50 top-0 left-0 fixed"
+  >
+    <div className="w-80 bg-white h-full overflow-y-auto relative">
+      <div className="absolute top-5 rounded-full bg-black p-2 right-10 z-0">
+        <Icon.X
+          onClick={handleMenu}
+          className="text-neutral-500"
+        />
+      </div>
+      <div className="md:hidden w-full">
+        <MobileSidebar />
+      </div>
+    </div>
+  </div>
+)}
+
       </div>
     </div>
   )

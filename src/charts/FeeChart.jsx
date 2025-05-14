@@ -8,11 +8,11 @@ const FeeChart = () => {
   return (
     <div>
       <div className={`w-full rounded-3xl ${theme === "dark"?"bg-neutral-700":"bg-neutral-100"} min-h-80 h-80 p-4`}>
-        <div className='w-full flex flex-row items-center space-x-4'>
-          <p className='text-black text-sm'>Fees Collected</p>
-          <p className='text-neutral-400 text-sm'>Income</p>
-          <p className='text-neutral-400 text-sm'>Expenses</p>
-          <p className='text-neutral-400 text-sm'>|</p>
+        <div className='w-full flex md:flex-row items-center space-x-4'>
+          <p className='text-black md:text-sm text-xs'>Fees Collected</p>
+          <p className='text-neutral-400 md:text-sm text-xs'>Income</p>
+          <p className='text-neutral-400 md:text-sm text-xs'>Expenses</p>
+          <p className='text-neutral-400 md:text-sm text-xs'>|</p>
           <div className='flex flex-row items-center'>
             <Dot size={30} />
             <p className='text-neutral-400 text-sm'>This year</p>

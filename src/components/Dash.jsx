@@ -19,7 +19,7 @@ const Dash = () => {
       </div>
 
       {/* stats */}
-      <div className='w-full grid grid-cols-4 gap-4'>
+      <div className='w-full md:grid flex flex-col grid-cols-4 gap-4'>
         <div className='w-full h-32 rounded-3xl bg-violet-100 flex flex-col justify-center items-start px-5 space-y-2'>
           <p className='text-md'>Pending Fees</p>
           <div className='w-full flex-row flex items-center space-x-5'>
@@ -63,18 +63,18 @@ const Dash = () => {
       </div>
 
       {/* Fees graph */}
-      <div className='w-full flex flex-row space-x-5 justify-between'>
-        <div className='w-[70%]'>
+      <div className='w-full flex md:flex-row flex-col md:space-x-5 space-y-2 justify-between'>
+        <div className='md:w-[70%] w-full'>
           <FeeChart />
         </div>
-        <div className='w-[25%]'>
+        <div className='md:w-[25%] w-full'>
           <Attendance />
         </div>
       </div>
 
 
       {/* income graph */}
-      <div className="w-full gap-4 grid grid-cols-2">
+      <div className="w-full gap-4 md:grid flex flex-col py-4 grid-cols-2">
         <div className="w-full">
             <IncomeChart/>
         </div>
