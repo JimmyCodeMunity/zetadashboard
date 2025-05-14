@@ -7,4 +7,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ["@emotion/react", "@emotion/styled", "@emotion/cache"],
   },
+  // resolve: {
+  //   alias: {
+  //     '@mui/styled-engine': '@mui/styled-engine-sc',
+  //   },
+  // },
 });
