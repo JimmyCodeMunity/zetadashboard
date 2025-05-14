@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
+    "@mui/styled-engine": "latest",
     "@mui/x-charts": "^8.3.0",
     "axios": "^1.9.0",
     "d3": "^7.9.0",
