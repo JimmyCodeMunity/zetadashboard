@@ -244,7 +244,7 @@ export default function MobileSidebar () {
   const { theme, toggleTheme } = useContext(MyThemeContext)
 
   return (
-    <div className='md:hidden block w-full h-full overflow-y-scroll z-20 bg-white p-4 space-y-10'>
+    <div className='md:hidden block w-full h-full overflow-y-scroll z-20 bg-white shadow shadow-4xl shadow-neutral-300 p-4 space-y-10'>
       <div className='w-full py-5 flex flex-row  items-end space-x-4 px-4'>
         {/* <img src='../apartment.png' className='h-10 w-10' alt='Haus Logo' /> */}
         <h1 className='text-black font-bold tracking-wider text-sm'>
